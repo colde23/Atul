@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Atul_backend": {
+      "main": "src/Atul_backend/main.mo",
+      "type": "motoko"
+    },
+    "Atul_frontend": {
+      "dependencies": [
+        "Atul_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Atul_frontend/src/index.html"
+      },
+      "source": [
+        "src/Atul_frontend/assets",
+        "dist/Atul_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
